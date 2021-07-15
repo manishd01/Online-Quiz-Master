@@ -1,0 +1,36 @@
+{% extends "basefile.html" %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> {% block title %} HOME {% endblock title %} </title>
+        {% block style %}
+        <link href=" {% static 'css/homepage.css' %} " rel="stylesheet">
+        {% endblock style %}
+
+
+    </head>
+
+
+    <body>{% block body %}
+
+        <img id="full_screen_img" src="{% static 'images/homeimg.jpg' %}">
+        <img id="small_img" src="{% static 'images/homeinside.jpeg' %}">
+        <input type="submit" id="take_test_btn" name="take_test" value="TAKE TEST ">
+        <!-- <img id="home_img" src="{% static 'images/homework.jpg' %}"> -->
+
+
+
+
+        {% endblock body %}
+
+
+    </body>
+
+
+</html>

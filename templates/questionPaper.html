@@ -1,0 +1,53 @@
+{% extends "basefile.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}
+            START TEST
+            {% endblock title %}</title>
+        {% block style %}
+        <link rel="stylesheet" href=" {% static 'css/questionPaper.css' %} "> {% endblock style %}
+
+    </head>
+
+    <body>
+        {% block body %}
+        <!-- <h1 class="gd"> {{a}} </h1> -->
+        <!-- <div id="full_screen"> -->
+        <img id="full_screen_img" src="{% static 'images/img4.jpg' %}">
+
+        <div class="container_question">
+            <fieldset class="main_outline">
+                <!-- <label class="heading_question"> {{ques_num}} </label> -->
+                <h1 class="question_statement"> {{ques_statement}} </h1>
+                <ul class="options">
+                    <form action="save_answers/" method="POST"> {% csrf_token %}
+                        <input type="radio" class="option" name="option_selected" value="{{opt1}}">
+                        <div class="opt_value">{{opt1}}</div> <br>
+                        <input type="radio" class="option" name="option_selected" value="{{opt2}}">
+                        <div class="opt_value">{{opt2}}</div> <br>
+                        <input type="radio" class="option" name="option_selected" value="{{opt3}}">
+                        <div class="opt_value">{{opt3}}</div> <br>
+                        <input type="radio" class="option" name="option_selected" value="{{opt4}}">
+                        <div class="opt_value">{{opt4}}</div> <br>
+                        <div id='btn'> <input type="submit" class="sub_btn" name="next"> </div>
+
+                    </form>
+                </ul>
+            </fieldset>
+        </div>
+        <!-- </div> -->
+        {% endblock body %}
+
+
+
+
+
+    </body>
+
+</html>

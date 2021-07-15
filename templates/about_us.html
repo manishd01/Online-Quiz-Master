@@ -1,0 +1,61 @@
+{% extends 'basefile.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %} ABOUT US {% endblock title %} </title>
+        {% block style %}
+        <link href="{% static 'css/aboutus.css' %}" rel="stylesheet"> {% endblock style %}
+    </head>
+
+
+    <body>
+        {% block body %}
+
+        <img id="full_screen_img" src="{% static 'images/aboutus.jpg' %}">
+        <!-- <div id="content_abt">
+            <div id="abt_info">We have proposed a system named as ONLINE COMPETITIVE EXAMINATION SYSTEM
+                that is a web-based application and maintains a centralized repository of all related
+                information. Online examination system helps these intuitions to monitor progress of their
+                students. In this there is a question bank from which random questions are displayed in the
+                screen, which are of objective type, consisting four options each, student has to select correct
+                option. After the system has been made ,it will have higher accuracy and speed. It will help
+                the students to prepare for other external competitive exams.
+                We have proposed a system named as ONLINE COMPETITIVE EXAMINATION SYSTEM
+                that is a web-based application and maintains a centralized repository of all related
+                information. Online examination system helps these intuitions to monitor progress of their
+                students. In this there is a question bank from which random questions are displayed in the
+                screen, which are of objective type, consisting four options each, student has to select correct
+                option. After the system has been made ,it will have higher accuracy and speed. It will help the
+                students to prepare for other external competitive exams.
+            </div>
+        </div> -->
+        <h1 id="abt_head">ABOUT US </h1>
+        <fieldset id="box_abt">
+            <h2 id="abt"> ONLINE QUIZ MASTER is a web-based application and maintains a centralized repository of all
+                related
+                information. It helps these intuitions to monitor progress of their
+                students. In this there is a question bank from which random questions are displayed in the
+                screen, which are of objective type, consisting four options each, student has to select correct
+                option. After the system has been made ,it will have higher accuracy and speed. It will help
+                the students to prepare for other external competitive exams.
+                We have proposed a system named as ONLINE QUIZ MASTER
+                that is a web-based application and maintains a centralized repository of all related
+                information. Online examination system helps these intuitions to monitor progress of their
+                students. In this there is a question bank from which random questions are displayed in the
+                screen, which are of objective type, consisting four options each, student has to select correct
+                option. After the system has been made ,it will have higher accuracy and speed. It will help the
+                students to prepare for other external competitive exams. </h2>
+        </fieldset>
+
+
+        {% endblock body %}
+
+
+    </body>
+
+</html>

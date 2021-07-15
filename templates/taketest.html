@@ -1,0 +1,54 @@
+{% extends 'basefile.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %} TAKE TEST {% endblock title %} </title>
+        <!-- <link href=" {% static 'css/taketest.css' %} " rel="stylesheet"> -->
+        {% block style %}
+        <link href=" {% static 'css/taketest.css' %} " rel="stylesheet"> {% endblock style %}
+
+
+    </head>
+
+    <body>
+        {% block body %}
+        <img id="full_screen_img" src="{% static 'images/img2.jpg' %}">
+        <div id="container">
+            <fieldset class="outline">
+                <legend id="title"> TAKE TEST </legend>
+                <h6>DEPARTMENT : COMPUTER ENGINEERING</h6>
+                <form action="start_test/" method="POST"> {% csrf_token %}
+                    <br> <br>
+
+                    <div class="entry_name"> Subject: <select name="subject" id="subject_id">
+                            <option name="DataBase Management System"> DataBase Management System</option>
+                            {% comment %} <option name="Python Programming"> Python Programming</option> {% endcomment %}
+                            <option name="C Language"> C Language</option>
+                            <option name="Linux Opertaing System"> Linux Opertaing System</option>
+                            <option name="Computer Hardware and Networks"> Computer Hardware and Networks</option>
+                            <option name="HTML+CSS"> HTML+CSS</option>
+                        </select> </div>
+                    <br>
+                    <br>
+                    <div class="entry_name">Number of Questions:
+                        <input name="num_of_ques" id="Number_of_questions" type="text">
+                    </div>
+                    <br> <br>
+                    <div class="entry_name">Candidate's Name: <input name="candidate_name" id="name" type="text"></div>
+                    <br>
+                    <input id="start_test_button" type="submit" name="start" value="START TEST">
+
+                </form>
+            </fieldset>
+
+        </div>
+
+        {% endblock body %}
+    </body>
+
+</html>

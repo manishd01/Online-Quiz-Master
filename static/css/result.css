@@ -1,0 +1,25 @@
+#certi{
+    position: realtive;
+    top: 45%;
+    right: 60%;
+}
+#res{
+    position:absolute;
+    color:red;
+    font-family:OCR A Extended;
+}
+#cert_img{
+    top: 237px;
+    position: absolute;
+    left: 25%;
+}
+/* #c_img{
+    position: relative;
+    top:220px;
+    left:33%;
+} */
+#cname{
+    font-family: Lucida Handwriting;
+    font-size: 3cm;
+
+}

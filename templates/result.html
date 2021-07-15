@@ -1,0 +1,32 @@
+{% extends 'basefile.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %} RESULT {% endblock title %}</title>
+        {% block style %}
+        <link href=" {% static 'css/result.css' %} " rel="stylesheet"> {% endblock style %}
+    </head>
+
+    <body>
+        {% block body %}
+        <img id="full_screen_img" src="{% static 'images/result.jpg' %}">
+        <div id="certicate">
+            <img id="cert_img" src="{% static 'images/cert.jpg' %}" height="400" width="700">
+            <div id="certi">  <h1 id="res"> Dear, <br> <label id="cname"> {{name}} </label> <br> your score is {{marks}}
+                you have sucessfully passed. </h1>
+            </div>
+        </div>
+
+
+
+
+        {% endblock body %}
+
+    </body>
+
+</html>

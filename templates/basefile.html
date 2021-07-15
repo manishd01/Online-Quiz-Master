@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> OQM|{% block title %} {% endblock title %} </title>
+
+        {% block style %} {% endblock style %}
+        <link href=" {% static 'css/homepage.css' %} " rel="stylesheet">
+
+    </head>
+
+    <body>
+        <nav>
+            <div id="navbar1">
+                <ul class="whole_ele" type="none">
+                    <li class="nav_ele"> <a class="nav_ele1" href="http://127.0.0.1:8000/"> HOME</a> </li>
+                    <li class="nav_ele"> <a class="nav_ele1" href="http://127.0.0.1:8000/take_test/"> TAKE TEST </a>
+                    </li>
+                    <li class="nav_ele"> <a class="nav_ele1" href="http://127.0.0.1:8000/about_us/"> ABOUT US </a></li>
+                    <li class="nav_ele"> <a class="nav_ele1" href="http://127.0.0.1:8000/contact_us/"> CONTACT US </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <header>
+            <div id="heading">
+                <div id="main_head">
+                    <!-- ONLINE COMPETITIVE EXAMNINATION SYSTEM -->
+                    ONLINE QUIZ MASTER
+
+                </div>
+                <br> <br>
+                <div id="sub_head">
+                    It will be a great help to students to prepare for COMPETITIVE exams and answers questions of
+                    various subjects of COMPUTER ENGINEERING </div>
+            </div>
+        </header>
+        {% block body %}
+        {% endblock body %}
+    </body>
+
+</html>

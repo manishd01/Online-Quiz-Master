@@ -1,0 +1,26 @@
+body{
+    margin: 7px;
+    
+}
+#abt_head{
+    position:absolute;
+    top:210px;
+    left: 50%;
+    background-color: black;
+    color: ivory;
+}
+#box_abt{
+    position: absolute;
+    margin-right: 200px;
+    margin-left: 400px;
+    top:280px;    
+    background-color:bisque;
+}
+
+#abt{
+    margin-right: 40px;
+    color: red;
+    text-align: center;
+    font-family: Imprint MT Shadow;
+    font-size: 5mm;
+}

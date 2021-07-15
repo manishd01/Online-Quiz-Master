@@ -1,0 +1,64 @@
+#full_screen_img{
+    height: 100%;
+    width: 100%;
+
+}
+#container{
+    left:450px;
+    /* right: 250px; */
+    top: 250px;
+    margin: auto;
+    position: absolute;
+    font-family: Copperplate Gothic ;
+    text-align:center;
+    font-weight: bolder;
+    font-size: 5mm;
+    
+}
+.outline{
+    
+    top: 30px;
+    right: 50px;
+    height: 400px;
+    width: 600px;
+    border: black 9px double ;
+    border-radius: 100px;
+   /* background-color:bisque; */
+   /* opacity: 0.7; */
+}
+#title{
+    font-weight: bolder;
+    
+}
+.entry_name{
+    background-color: green;
+    color: white;
+    width:fit-content;
+    height: 7mm;
+    text-align:center;
+}
+#subject_id{
+    width: 250px;
+    background-color: white;
+    color: black;
+}
+#Number_of_questions{
+    /* display: inline; */
+    background-color: white;
+    color: black;
+}
+#name{
+    background-color: white;
+    color: black;
+    
+}
+#start_test_button{
+    background-color:cornsilk;
+    height: 50px;
+    font-weight: bolder;
+}
+#start_test_button:hover{
+    background-color:darkgreen;
+    color: white;
+
+}
